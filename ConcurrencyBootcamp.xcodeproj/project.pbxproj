@@ -11,6 +11,9 @@
 		B67E76802A9C338200ABAD06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E767F2A9C338200ABAD06 /* ContentView.swift */; };
 		B67E76822A9C338300ABAD06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67E76812A9C338300ABAD06 /* Assets.xcassets */; };
 		B67E76862A9C338300ABAD06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67E76852A9C338300ABAD06 /* Preview Assets.xcassets */; };
+		B67E768D2A9C342C00ABAD06 /* DownloadImageAsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E768C2A9C342C00ABAD06 /* DownloadImageAsyncView.swift */; };
+		B67E76902A9C3E6400ABAD06 /* DownloadImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E768F2A9C3E6400ABAD06 /* DownloadImageLoader.swift */; };
+		B67E76922A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E76912A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		B67E76812A9C338300ABAD06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B67E76832A9C338300ABAD06 /* ConcurrencyBootcamp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConcurrencyBootcamp.entitlements; sourceTree = "<group>"; };
 		B67E76852A9C338300ABAD06 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B67E768C2A9C342C00ABAD06 /* DownloadImageAsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsyncView.swift; sourceTree = "<group>"; };
+		B67E768F2A9C3E6400ABAD06 /* DownloadImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageLoader.swift; sourceTree = "<group>"; };
+		B67E76912A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsyncViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		B67E767C2A9C338200ABAD06 /* ConcurrencyBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				B67E768E2A9C3E4D00ABAD06 /* DownloadImageAsync */,
 				B67E767D2A9C338200ABAD06 /* ConcurrencyBootcampApp.swift */,
 				B67E767F2A9C338200ABAD06 /* ContentView.swift */,
 				B67E76812A9C338300ABAD06 /* Assets.xcassets */,
@@ -67,6 +74,16 @@
 				B67E76852A9C338300ABAD06 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B67E768E2A9C3E4D00ABAD06 /* DownloadImageAsync */ = {
+			isa = PBXGroup;
+			children = (
+				B67E768C2A9C342C00ABAD06 /* DownloadImageAsyncView.swift */,
+				B67E768F2A9C3E6400ABAD06 /* DownloadImageLoader.swift */,
+				B67E76912A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift */,
+			);
+			path = DownloadImageAsync;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +157,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B67E76802A9C338200ABAD06 /* ContentView.swift in Sources */,
+				B67E768D2A9C342C00ABAD06 /* DownloadImageAsyncView.swift in Sources */,
+				B67E76902A9C3E6400ABAD06 /* DownloadImageLoader.swift in Sources */,
+				B67E76922A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift in Sources */,
 				B67E767E2A9C338200ABAD06 /* ConcurrencyBootcampApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +299,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -287,10 +307,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = geonhui.ConcurrencyBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +339,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
@@ -325,10 +347,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = geonhui.ConcurrencyBootcamp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
