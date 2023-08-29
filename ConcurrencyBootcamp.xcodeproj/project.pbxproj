@@ -14,6 +14,10 @@
 		B67E768D2A9C342C00ABAD06 /* DownloadImageAsyncView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E768C2A9C342C00ABAD06 /* DownloadImageAsyncView.swift */; };
 		B67E76902A9C3E6400ABAD06 /* DownloadImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E768F2A9C3E6400ABAD06 /* DownloadImageLoader.swift */; };
 		B67E76922A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E76912A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift */; };
+		B67E76952A9C947A00ABAD06 /* AsyncAwaitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E76942A9C947A00ABAD06 /* AsyncAwaitView.swift */; };
+		B67E76972A9C948700ABAD06 /* AsyncAwaitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E76962A9C948700ABAD06 /* AsyncAwaitViewModel.swift */; };
+		B6A32C212A9DB8DF00D4BE0A /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A32C202A9DB8DF00D4BE0A /* TaskView.swift */; };
+		B6A32C232A9DB8FA00D4BE0A /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A32C222A9DB8FA00D4BE0A /* TaskViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B67E768C2A9C342C00ABAD06 /* DownloadImageAsyncView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsyncView.swift; sourceTree = "<group>"; };
 		B67E768F2A9C3E6400ABAD06 /* DownloadImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageLoader.swift; sourceTree = "<group>"; };
 		B67E76912A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadImageAsyncViewModel.swift; sourceTree = "<group>"; };
+		B67E76942A9C947A00ABAD06 /* AsyncAwaitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitView.swift; sourceTree = "<group>"; };
+		B67E76962A9C948700ABAD06 /* AsyncAwaitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAwaitViewModel.swift; sourceTree = "<group>"; };
+		B6A32C202A9DB8DF00D4BE0A /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		B6A32C222A9DB8FA00D4BE0A /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,8 @@
 		B67E767C2A9C338200ABAD06 /* ConcurrencyBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				B6A32C1F2A9DB8C500D4BE0A /* Task */,
+				B67E76932A9C945A00ABAD06 /* AsyncAwait */,
 				B67E768E2A9C3E4D00ABAD06 /* DownloadImageAsync */,
 				B67E767D2A9C338200ABAD06 /* ConcurrencyBootcampApp.swift */,
 				B67E767F2A9C338200ABAD06 /* ContentView.swift */,
@@ -84,6 +94,24 @@
 				B67E76912A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift */,
 			);
 			path = DownloadImageAsync;
+			sourceTree = "<group>";
+		};
+		B67E76932A9C945A00ABAD06 /* AsyncAwait */ = {
+			isa = PBXGroup;
+			children = (
+				B67E76942A9C947A00ABAD06 /* AsyncAwaitView.swift */,
+				B67E76962A9C948700ABAD06 /* AsyncAwaitViewModel.swift */,
+			);
+			name = AsyncAwait;
+			sourceTree = "<group>";
+		};
+		B6A32C1F2A9DB8C500D4BE0A /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				B6A32C202A9DB8DF00D4BE0A /* TaskView.swift */,
+				B6A32C222A9DB8FA00D4BE0A /* TaskViewModel.swift */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,11 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67E76952A9C947A00ABAD06 /* AsyncAwaitView.swift in Sources */,
 				B67E76802A9C338200ABAD06 /* ContentView.swift in Sources */,
 				B67E768D2A9C342C00ABAD06 /* DownloadImageAsyncView.swift in Sources */,
 				B67E76902A9C3E6400ABAD06 /* DownloadImageLoader.swift in Sources */,
 				B67E76922A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift in Sources */,
 				B67E767E2A9C338200ABAD06 /* ConcurrencyBootcampApp.swift in Sources */,
+				B67E76972A9C948700ABAD06 /* AsyncAwaitViewModel.swift in Sources */,
+				B6A32C232A9DB8FA00D4BE0A /* TaskViewModel.swift in Sources */,
+				B6A32C212A9DB8DF00D4BE0A /* TaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
