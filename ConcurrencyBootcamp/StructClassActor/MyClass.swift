@@ -14,4 +14,8 @@ class MyClass {
     init(title: String) {
         self.title = title
     }
+    
+    func updateTitle(newTitle: String) {
+        self.title = newTitle
+    }
 }

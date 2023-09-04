@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+// https://medium.com/@vinayakkini/swift-basics-struct-vs-class-31b44ade28ae
+// https://stackoverflow.com/questions/24217586/structure-vs-class-in-swift-language/59219141#59219141
+
 struct StructClassActorView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -18,9 +21,13 @@ struct StructClassActorView: View {
 
 extension StructClassActorView {
     private func runTest() {
-        structTest1()
+//        structTest1()
+//        printDivider()
+//        classTest1()
+        
+        structTest2()
         printDivider()
-        classTest1()
+        classTest2()
     }
     
     private func printDivider() {
@@ -97,6 +104,15 @@ extension StructClassActorView {
         
         print(#function)
         
+        let class1 = MyClass(title: "Title1")
+        print("Class1: ", class1.title) // Title1
+        class1.title = "Title2"
+        print("Class1: ", class1.title) // Title2
+        
+        let class2 = MyClass(title: "Title1")
+        print("Class2: ", class2.title) // Title1
+        class2.updateTitle(newTitle: "Title2")
+        print("Class2: ", class2.title) // Title2
     }
 }
 
