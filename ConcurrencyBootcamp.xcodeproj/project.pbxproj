@@ -27,6 +27,7 @@
 		B6A86D8A2AA56CE10036DD33 /* StructClassActorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A86D892AA56CE10036DD33 /* StructClassActorView.swift */; };
 		B6A86D8C2AA56D9A0036DD33 /* MyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A86D8B2AA56D9A0036DD33 /* MyStruct.swift */; };
 		B6A86D8E2AA56F530036DD33 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A86D8D2AA56F530036DD33 /* MyClass.swift */; };
+		B6A86D902AA5B2E70036DD33 /* MyActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A86D8F2AA5B2E70036DD33 /* MyActor.swift */; };
 		B6F780142AA0225300100121 /* AsyncLetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F780132AA0225300100121 /* AsyncLetView.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,7 @@
 		B6A86D892AA56CE10036DD33 /* StructClassActorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructClassActorView.swift; sourceTree = "<group>"; };
 		B6A86D8B2AA56D9A0036DD33 /* MyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStruct.swift; sourceTree = "<group>"; };
 		B6A86D8D2AA56F530036DD33 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		B6A86D8F2AA5B2E70036DD33 /* MyActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActor.swift; sourceTree = "<group>"; };
 		B6F780132AA0225300100121 /* AsyncLetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 				B6A86D892AA56CE10036DD33 /* StructClassActorView.swift */,
 				B6A86D8B2AA56D9A0036DD33 /* MyStruct.swift */,
 				B6A86D8D2AA56F530036DD33 /* MyClass.swift */,
+				B6A86D8F2AA5B2E70036DD33 /* MyActor.swift */,
 			);
 			path = StructClassActor;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 				B69970DA2AA081C900C04534 /* TaskGroupViewModel.swift in Sources */,
 				B6F780142AA0225300100121 /* AsyncLetView.swift in Sources */,
 				B680BD142AA178A600BF87F5 /* ContinuationNetworkManager.swift in Sources */,
+				B6A86D902AA5B2E70036DD33 /* MyActor.swift in Sources */,
 				B680BD122AA1781E00BF87F5 /* ContinuationViewModel.swift in Sources */,
 				B67E76902A9C3E6400ABAD06 /* DownloadImageLoader.swift in Sources */,
 				B67E76922A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift in Sources */,
