@@ -36,6 +36,8 @@ class ContinuationNetworkManager {
         }
     }
     
+    // Closure를 async 코드로 감싸 사용하기
+    // task를 제거하기 위해 resume(..) 메서드를 호출
     func getHeartImageFromDatabase(completionHadler: @escaping (_ image: UIImage) -> ()) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
             completionHadler(UIImage(systemName: "heart.fill")!)
