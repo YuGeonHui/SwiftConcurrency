@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B661CADE2AA6C6CA00068A12 /* GlobalActorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661CADD2AA6C6CA00068A12 /* GlobalActorView.swift */; };
+		B661CAE02AA6C7CE00068A12 /* GlobalActorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661CADF2AA6C7CE00068A12 /* GlobalActorViewModel.swift */; };
+		B661CAE22AA6C84200068A12 /* GlobalActorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B661CAE12AA6C84200068A12 /* GlobalActorManager.swift */; };
 		B67E767E2A9C338200ABAD06 /* ConcurrencyBootcampApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E767D2A9C338200ABAD06 /* ConcurrencyBootcampApp.swift */; };
 		B67E76802A9C338200ABAD06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67E767F2A9C338200ABAD06 /* ContentView.swift */; };
 		B67E76822A9C338300ABAD06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B67E76812A9C338300ABAD06 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B661CADD2AA6C6CA00068A12 /* GlobalActorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActorView.swift; sourceTree = "<group>"; };
+		B661CADF2AA6C7CE00068A12 /* GlobalActorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActorViewModel.swift; sourceTree = "<group>"; };
+		B661CAE12AA6C84200068A12 /* GlobalActorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalActorManager.swift; sourceTree = "<group>"; };
 		B67E767A2A9C338200ABAD06 /* ConcurrencyBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConcurrencyBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B67E767D2A9C338200ABAD06 /* ConcurrencyBootcampApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyBootcampApp.swift; sourceTree = "<group>"; };
 		B67E767F2A9C338200ABAD06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +77,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B661CADC2AA6C6BB00068A12 /* GlobalActor */ = {
+			isa = PBXGroup;
+			children = (
+				B661CADD2AA6C6CA00068A12 /* GlobalActorView.swift */,
+				B661CADF2AA6C7CE00068A12 /* GlobalActorViewModel.swift */,
+				B661CAE12AA6C84200068A12 /* GlobalActorManager.swift */,
+			);
+			path = GlobalActor;
+			sourceTree = "<group>";
+		};
 		B67E76712A9C338200ABAD06 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +106,7 @@
 		B67E767C2A9C338200ABAD06 /* ConcurrencyBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				B661CADC2AA6C6BB00068A12 /* GlobalActor */,
 				B6A86D912AA5D4710036DD33 /* Actor */,
 				B6A86D882AA56CC90036DD33 /* StructClassActor */,
 				B680BD0E2AA177D800BF87F5 /* Continuation */,
@@ -263,13 +280,16 @@
 				B67E76952A9C947A00ABAD06 /* AsyncAwaitView.swift in Sources */,
 				B680BD102AA177EB00BF87F5 /* ContinuationView.swift in Sources */,
 				B67E76802A9C338200ABAD06 /* ContentView.swift in Sources */,
+				B661CADE2AA6C6CA00068A12 /* GlobalActorView.swift in Sources */,
 				B67E768D2A9C342C00ABAD06 /* DownloadImageAsyncView.swift in Sources */,
 				B69970DA2AA081C900C04534 /* TaskGroupViewModel.swift in Sources */,
 				B6F780142AA0225300100121 /* AsyncLetView.swift in Sources */,
 				B680BD142AA178A600BF87F5 /* ContinuationNetworkManager.swift in Sources */,
+				B661CAE22AA6C84200068A12 /* GlobalActorManager.swift in Sources */,
 				B6A86D902AA5B2E70036DD33 /* MyActor.swift in Sources */,
 				B680BD122AA1781E00BF87F5 /* ContinuationViewModel.swift in Sources */,
 				B67E76902A9C3E6400ABAD06 /* DownloadImageLoader.swift in Sources */,
+				B661CAE02AA6C7CE00068A12 /* GlobalActorViewModel.swift in Sources */,
 				B67E76922A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift in Sources */,
 				B6A86D8C2AA56D9A0036DD33 /* MyStruct.swift in Sources */,
 				B6A86D932AA5D49B0036DD33 /* ActorView.swift in Sources */,

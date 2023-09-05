@@ -78,8 +78,8 @@ struct HomeView: View {
 //            }
 //        }
         .task {
-            let newString = manger.getSavedData
-            let newString2 = await manger.data
+            let _ = manger.getSavedData
+            let _ = await manger.data
         }
         .onReceive(time) { _ in
             Task {
