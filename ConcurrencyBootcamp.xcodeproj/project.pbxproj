@@ -32,6 +32,10 @@
 		B6A86D8E2AA56F530036DD33 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A86D8D2AA56F530036DD33 /* MyClass.swift */; };
 		B6A86D902AA5B2E70036DD33 /* MyActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A86D8F2AA5B2E70036DD33 /* MyActor.swift */; };
 		B6A86D932AA5D49B0036DD33 /* ActorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A86D922AA5D49B0036DD33 /* ActorView.swift */; };
+		B6B6B7262AA8198A00FA5A58 /* SendableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B6B7252AA8198A00FA5A58 /* SendableView.swift */; };
+		B6B6B7282AA819E900FA5A58 /* SendableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B6B7272AA819E900FA5A58 /* SendableViewModel.swift */; };
+		B6B6B72A2AA81A0600FA5A58 /* SendableActor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B6B7292AA81A0600FA5A58 /* SendableActor.swift */; };
+		B6B6B72C2AA81AF300FA5A58 /* MyUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B6B72B2AA81AF300FA5A58 /* MyUserInfo.swift */; };
 		B6F780142AA0225300100121 /* AsyncLetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6F780132AA0225300100121 /* AsyncLetView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +67,10 @@
 		B6A86D8D2AA56F530036DD33 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		B6A86D8F2AA5B2E70036DD33 /* MyActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActor.swift; sourceTree = "<group>"; };
 		B6A86D922AA5D49B0036DD33 /* ActorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorView.swift; sourceTree = "<group>"; };
+		B6B6B7252AA8198A00FA5A58 /* SendableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableView.swift; sourceTree = "<group>"; };
+		B6B6B7272AA819E900FA5A58 /* SendableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableViewModel.swift; sourceTree = "<group>"; };
+		B6B6B7292AA81A0600FA5A58 /* SendableActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendableActor.swift; sourceTree = "<group>"; };
+		B6B6B72B2AA81AF300FA5A58 /* MyUserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUserInfo.swift; sourceTree = "<group>"; };
 		B6F780132AA0225300100121 /* AsyncLetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +114,7 @@
 		B67E767C2A9C338200ABAD06 /* ConcurrencyBootcamp */ = {
 			isa = PBXGroup;
 			children = (
+				B6B6B7242AA8196100FA5A58 /* Sendable */,
 				B661CADC2AA6C6BB00068A12 /* GlobalActor */,
 				B6A86D912AA5D4710036DD33 /* Actor */,
 				B6A86D882AA56CC90036DD33 /* StructClassActor */,
@@ -199,6 +208,17 @@
 			name = Actor;
 			sourceTree = "<group>";
 		};
+		B6B6B7242AA8196100FA5A58 /* Sendable */ = {
+			isa = PBXGroup;
+			children = (
+				B6B6B7252AA8198A00FA5A58 /* SendableView.swift */,
+				B6B6B7272AA819E900FA5A58 /* SendableViewModel.swift */,
+				B6B6B7292AA81A0600FA5A58 /* SendableActor.swift */,
+				B6B6B72B2AA81AF300FA5A58 /* MyUserInfo.swift */,
+			);
+			path = Sendable;
+			sourceTree = "<group>";
+		};
 		B6F780122AA0224000100121 /* AsyncLet */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,13 +303,17 @@
 				B661CADE2AA6C6CA00068A12 /* GlobalActorView.swift in Sources */,
 				B67E768D2A9C342C00ABAD06 /* DownloadImageAsyncView.swift in Sources */,
 				B69970DA2AA081C900C04534 /* TaskGroupViewModel.swift in Sources */,
+				B6B6B7262AA8198A00FA5A58 /* SendableView.swift in Sources */,
 				B6F780142AA0225300100121 /* AsyncLetView.swift in Sources */,
+				B6B6B7282AA819E900FA5A58 /* SendableViewModel.swift in Sources */,
 				B680BD142AA178A600BF87F5 /* ContinuationNetworkManager.swift in Sources */,
 				B661CAE22AA6C84200068A12 /* GlobalActorManager.swift in Sources */,
 				B6A86D902AA5B2E70036DD33 /* MyActor.swift in Sources */,
 				B680BD122AA1781E00BF87F5 /* ContinuationViewModel.swift in Sources */,
 				B67E76902A9C3E6400ABAD06 /* DownloadImageLoader.swift in Sources */,
+				B6B6B72A2AA81A0600FA5A58 /* SendableActor.swift in Sources */,
 				B661CAE02AA6C7CE00068A12 /* GlobalActorViewModel.swift in Sources */,
+				B6B6B72C2AA81AF300FA5A58 /* MyUserInfo.swift in Sources */,
 				B67E76922A9C3E9E00ABAD06 /* DownloadImageAsyncViewModel.swift in Sources */,
 				B6A86D8C2AA56D9A0036DD33 /* MyStruct.swift in Sources */,
 				B6A86D932AA5D49B0036DD33 /* ActorView.swift in Sources */,

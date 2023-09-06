@@ -7,7 +7,7 @@
 
 import Foundation
 
-@MainActor
+@MainActor // 메인 스레드에서의 동작을 보장시켜준다.
 class GlobalActorViewModel: ObservableObject {
     
     @Published var dataArray1: [String] = []

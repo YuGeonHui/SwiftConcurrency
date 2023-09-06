@@ -15,7 +15,7 @@ struct GlobalActorView: View {
         ScrollView {
             VStack {
                 
-                ForEach(viewModel.dataArray, id: \.self) {
+                ForEach(viewModel.dataArray1, id: \.self) {
                     Text($0)
                         .font(.headline)
                 }
